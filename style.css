@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 5rem;
+}
+
+header{
+    background-color: #663399;
+    color: #ffffff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.bar{
+    width: 25px;
+    height: 5px;
+    background-color: black;
+    margin: 15%;
+}
+
+.hamburger-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu li a{
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+main{
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+p{
+    text-align: justify;
+    margin: 3px;
+    margin-left: 8px;
+}
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    gap: 5px;
+}
+
+img{
+    width: 90%;
+    height: 80%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #4f2479;
+    color: #fff;
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+}
+
+h3{
+    margin-bottom: 8px;
+}
+
+.conteiner-footer{
+    display: flex;
+    justify-content:space-around;
+}
+
+@media (max-width: 768px) {
+
+    body{
+        
+    }
+
+    header{
+        padding: 20px;
+    }
+    .hamburger-menu{
+        position: fixed;
+        display: block;
+        left: 14px;
+
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+    }
+    .menu.ativo{
+        display: flex;
+        position: fixed;
+        top: 2.5rem;
+        left: 0px;
+        background-color: #502977;
+        margin: 0;
+        padding: 5px;
+        width: 80px;
+        text-align: center;
+        
+    }
+
+    .menu li a{
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .conteudo{
+    grid-template-columns: 100%;
+    }
+
+    footer{
+        position: fixed;
+    }
+
+    .conteiner-footer{
+        display:flex;
+        text-align: center;
+    }
+
+    footer{
+        position: absolute;
+        bottom: -169rem;
+    }
+}
